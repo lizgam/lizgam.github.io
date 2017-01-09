@@ -1,0 +1,20 @@
+{
+  "name": "youtube-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack -w  --config webpack.config.js"
+  },
+  "author": "Liza Gamaliy",
+  "license": "",
+  "dependencies": {
+    "eslint": "^3.5.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "webpack": "^1.14.0"
+  }
+}
