@@ -10,11 +10,12 @@ export class NewsSnippet {
       li.className = 'video-item';
       let {author, description, publishedAt, title, url, urlToImage } = item;
       let pureDate = publishedAt.substring(0, 10);
+      let imgTag = urlToImage ? `<img alt='image to news' src='${urlToImage}'/>` : '';
       li.innerHTML = `
         <h2><a target='_blank' href='${url}'>${title}</a></h2>
         <i>${pureDate}</i>
         <div class='content'>
-          <img src='${urlToImage}'/>
+          ${imgTag}
           <p>${description}</p>
         </div>`;
       fragment.appendChild(li);
